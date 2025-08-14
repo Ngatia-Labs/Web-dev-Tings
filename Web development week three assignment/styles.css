@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ff8c66;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #ff7043;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-image: url('https://images.unsplash.com/photo-1542826438-8e8b2b2d7b45');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.hero h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Sections */
+.section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.section h2 {
+  text-align: center;
+  color: #ff7043;
+}
+
+/* Menu items */
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.menu-item img {
+  width: 120px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.menu-item div {
+  flex: 1;
+}
+
+/* Order Button */
+#orderButton {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#orderButton:hover {
+  background-color: #e65c2d;
+}
+
+/* Footer */
+footer {
+  background-color: #ff7043;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-item img {
+    margin: 0 0 10px 0;
+    width: 100%;
+    max-width: 300px;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}

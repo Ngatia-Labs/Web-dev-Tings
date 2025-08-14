@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Html page with basic Css stylings">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Manasses">
+        <title>Basic stylings in a website</title>
+        <link rel="stylesheet" a href="styles.css">
+    </head>
+    <body>
+        <header>
+             <h1>Sweet Treats Bakery</h1>
+             <p>Freshly Baked with love 🥰🥰 Everyday </p>
+        </header>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#about">About us</a>
+            <a href="#contact">Contacts</a>
+        </nav>
+        <section class="hero">
+    <h2>Delicious Pastries, Warm Bread, Sweet Memories</h2>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Our Menu</h2>
+
+    <div class="menu-item">
+      <img src="https://www.homemadeinterest.com/wp-content/uploads/2021/10/Easy-Chocolate-Croissant_IG-3.jpg" alt="Croissant">
+      <div>
+        <h3>Chocolate Croissant - 450Ksh</h3>
+        <p>Flaky butter pastry filled with rich chocolate.</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.allrecipes.com/thmb/DCWXlgmQnMJTPiwFiYm_i3hlCbY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/260540-Chef-Johns-Sourdough-Bread-DDMFS-004-4x3-6791a75a5d804ec28424d04756054c5b.jpg" alt="Sourdough Bread">
+      <div>
+        <h3>Sourdough Loaf - 500ksh</h3>
+        <p>Artisan bread with a tangy, soft interior and crisp crust.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Sweet Treats Bakery, we believe in the magic of fresh ingredients, skilled hands, and a sprinkle of love. Since opening in 2023, we've been serving our community with bread, pastries, and cakes made from scratch every morning.</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>📍 1450 Barack Street, Nyahururu</p>
+    <p>📞 0734567890</p>
+    <p>📧 hello@sweettreats.com</p>
+    <p>⏰ Mon–Sat: 7am – 6pm | Sun: Closed</p>
+    <button id="orderButton">📲 Place Order via WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sweet Treats Bakery | Follow us on Instagram @SweetTreats</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("orderButton").addEventListener("click", function() {
+      window.open("https://wa.me/1234567890?text=Hello%20Sweet%20Treats%20Bakery!%20I%20would%20like%20to%20place%20an%20order.", "_blank");
+    });
+  </script>
+
+</body>
+</html>
+       
+    </body>
