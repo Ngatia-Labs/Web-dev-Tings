@@ -1,0 +1,105 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Services · MineTech</title>
+      <meta name="description" content="BlueGold multipage site: modern, responsive, accessible."/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css" />
+      <script defer src="js/main.js"></script>
+    </head>
+    <body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><span>MineTech</span>Systems</a>
+    <nav id="nav" class="nav">
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <main id="main" class="site-main" tabindex="-1">
+
+<section class="container reveal">
+  <h1>Our Services</h1>
+  <div class="cards-3">
+    <article class="card">
+      <h3>Web Design</h3>
+      <p>Crafting beautiful, responsive, and accessible user interfaces.</p>
+      <a class="btn btn-primary" href="contact.html">Get a Quote</a>
+    </article>
+    <article class="card">
+      <h3>Development</h3>
+      <p>Robust front-end with clean, maintainable code and best practices.</p>
+      <a class="btn btn-primary" href="contact.html">Start a Project</a>
+    </article>
+    <article class="card">
+      <h3>Optimization</h3>
+      <p>Performance tuning, SEO, and UX improvements for real results.</p>
+      <a class="btn btn-primary" href="contact.html">Improve My Site</a>
+    </article>
+  </div>
+</section>
+
+<section class="container split reveal">
+  <img src="images/placeholder-2.svg" alt="Abstract charts" class="rounded-xl shadow-xl" />
+  <div>
+    <h2>How we work</h2>
+    <ol>
+      <li>Discovery & planning</li>
+      <li>Design & prototyping</li>
+      <li>Building, testing, and deployment</li>
+    </ol>
+    <a class="btn btn-ghost" href="about.html">More about us</a>
+  </div>
+</section>
+
+      </main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>BlueGold</h4>
+      <p>A clean, modern, responsive website to help businesses scale with clarity.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <form id="newsletterForm" class="newsletter-form" novalidate>
+        <label class="sr-only" for="newsletterEmail">Email</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="Your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletterMsg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> MineTech Systems.com . All rights reserved.</p>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+    </body>
+    </html>

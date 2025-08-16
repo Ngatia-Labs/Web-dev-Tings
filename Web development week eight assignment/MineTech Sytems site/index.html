@@ -1,0 +1,112 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Home · MineTech systems</title>
+      <meta name="description" content="BlueGold multipage site: modern, responsive, accessible."/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css" />
+      <script defer src="js/main.js"></script>
+    </head>
+    <body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html"><span>MineTech</span>Systems</a>
+    <nav id="nav" class="nav">
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <main id="main" class="site-main" tabindex="-1">
+
+<section class="hero container reveal">
+  <div class="hero-content">
+    <h1>Build something <span class="grad">beautiful</span> and <span class="grad">fast</span>.</h1>
+    <p>I dont just create websites, I create systems that help you grow your business, dominate your niche and easily connects with
+      with your audience.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="services.html">Explore Services</a>
+      <a class="btn btn-ghost" href="gallery.html">See Gallery</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <img src="images/hero-shapes.svg" alt="" />
+  </div>
+</section>
+
+<section class="features container">
+  <article class="card reveal">
+    <h3>Responsive by Default</h3>
+    <p>Layouts adapt from mobile to desktop with a refined grid, spacing, and typography.</p>
+  </article>
+  <article class="card reveal">
+    <h3>Accessible & Semantic</h3>
+    <p>My websites have a strong contrast to ensure usability for all.</p>
+  </article>
+  <article class="card reveal">
+    <h3>Interactive & Smooth</h3>
+    <p>Mobile nav toggle, scroll reveals, form validation, and a back-to-top button.</p>
+  </article>
+</section>
+
+<section class="container split reveal">
+  <div>
+    <h2>Why MineTech?</h2>
+    <p>By choosing us, we guide you through the full journey by crafting a compelling offer
+      writing a persuassive website copy, structuring your site for clarity and optimising your google
+      visibility. Your website thus becomes your 24/7 sales agent.</p>
+    <a class="btn btn-primary" href="about.html">Learn More</a>
+  </div>
+  <img src="images/placeholder-1.svg" alt="Abstract colorful shapes" class="rounded-xl shadow-xl" />
+</section>
+
+      </main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>MineTech</h4>
+      <p>A clean, modern, responsive website to help business owners scale with clarity.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <form id="newsletterForm" class="newsletter-form" novalidate>
+        <label class="sr-only" for="newsletterEmail">Email</label>
+        <input type="email" id="newsletterEmail" name="email" placeholder="Your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletterMsg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> MineTech Systems.com . All rights reserved.</p>
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+    </body>
+    </html>
