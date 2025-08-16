@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Interactive Web Page</h1>
+  </header>
+
+  <!-- Interactive Section 1: Button Click Counter -->
+  <section>
+    <h2>Click Counter</h2>
+    <p>Button clicked <span id="clickCount">0</span> times.</p>
+    <button id="countBtn">Click Me</button>
+  </section>
+
+  <!-- Interactive Section 2: Show/Hide Password -->
+  <section>
+    <h2>Password Toggle</h2>
+    <input type="password" id="passwordField" placeholder="Enter password">
+    <button id="togglePassword">Show/Hide</button>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <label>Name: <input type="text" id="nameInput"></label><br><br>
+      <label>Email: <input type="text" id="emailInput"></label><br><br>
+      <label>Message: <textarea id="messageInput"></textarea></label><br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formFeedback" class="error"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Interactive Page</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

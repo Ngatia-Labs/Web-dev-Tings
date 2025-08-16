@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Animations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>✨ CSS + JS Animations Playground 🎬</h1>
+  </header>
+
+  <main>
+    <!-- Part 1: CSS Animations -->
+    <section>
+      <h2>🎨 Part 1: Pure CSS Animations</h2>
+      <button class="btn-hover">Hover Me</button>
+      <div class="box-slide"></div>
+      <div class="box-spin"></div>
+    </section>
+
+    <!-- Part 2: JavaScript Functions -->
+    <section>
+      <h2>📚 Part 2: JavaScript Functions</h2>
+      <p id="functionResult">Result will appear here...</p>
+      <button onclick="showSum(5, 10)">Calculate Sum</button>
+      <button onclick="showGreeting('Student')">Show Greeting</button>
+    </section>
+
+    <!-- Part 3: CSS + JS Combined -->
+    <section>
+      <h2>🎬 Part 3: CSS + JS Combined</h2>
+      <button id="animateBtn">Animate the Box</button>
+      <div id="animBox" class="anim-box"></div>
+
+      <button id="toggleModal">Toggle Modal</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal">&times;</span>
+          <p>Hello! I slide in with CSS + JS ✨</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

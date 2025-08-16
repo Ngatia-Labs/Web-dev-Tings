@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header with Flexbox */
+.header {
+  display: flex;
+  justify-content: space-between; /* space between logo and nav */
+  align-items: center;
+  background: #0077cc;
+  color: #fff;
+  padding: 1rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f4f4f4;
+}
+
+/* Main Content with CSS Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column on small screens */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0077cc;
+  color: white;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Tablet breakpoint */
+@media (min-width: 600px) {
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 900px) {
+  .main-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  background: #18cc00;
+  color: white;
+  padding: 1rem;
+}
+
+button {
+  padding: 8px 12px;
+  background: #00c5cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a0a300;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}

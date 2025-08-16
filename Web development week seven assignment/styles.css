@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* 🎨 Part 1: CSS Animations */
+.btn-hover {
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+.btn-hover:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+.box-slide {
+  width: 100px;
+  height: 100px;
+  background: #ff6f61;
+  margin: 20px auto;
+  animation: slide 3s infinite alternate;
+}
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(200px); }
+}
+
+.box-spin {
+  width: 80px;
+  height: 80px;
+  background: #28a745;
+  margin: 20px auto;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 🎬 Part 3: CSS + JS Combined */
+.anim-box {
+  width: 100px;
+  height: 100px;
+  background: #ffc107;
+  margin: 20px auto;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+.anim-box.active {
+  transform: rotate(180deg) scale(1.3);
+  background: #6610f2;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.modal.show .modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+#closeModal {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
